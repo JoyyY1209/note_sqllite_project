@@ -32,7 +32,7 @@ class _UpdateNotesState extends State<UpdateNotes> {
   if(result!=0)
     {
       Get.snackbar("","",snackPosition : SnackPosition.BOTTOM);
-      Navigator.pop(context);
+      Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
     }
   else
     Get.snackbar("Eror", "Eror in note update",snackPosition: SnackPosition.BOTTOM);
